@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "../assets/avatar.svg";
-import { FaGithub, FaLinkedin, FaDribbble, FaGitlab } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import resume from "../assets/resume.pdf";
 
 const Banner = () => {
     return (
@@ -68,8 +69,12 @@ const Banner = () => {
                             className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lg:mx-0"
                         >
                             <button className="btn btn-lg">Contact me</button>
-                            <a href="#" className="text-gradient btn-link">
-                                My Portfolio
+                            <a
+                                href={resume}
+                                className="text-gradient btn-link"
+                                target="_blank"
+                            >
+                                My Resume
                             </a>
                         </motion.div>
                         <motion.div
@@ -79,17 +84,23 @@ const Banner = () => {
                             viewport={{ once: false, amount: 0.7 }}
                             className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0"
                         >
-                            <a href="#">
+                            <a
+                                href="https://www.linkedin.com/in/shahemalhadid/"
+                                target="_blank"
+                            >
                                 <FaLinkedin />
                             </a>
-                            <a href="#">
+                            <a
+                                href="https://gitlab.com/smalhadid"
+                                target="_blank"
+                            >
                                 <FaGitlab />
                             </a>
-                            <a href="#">
+                            <a
+                                href="https://github.com/salhadid"
+                                target="_blank"
+                            >
                                 <FaGithub />
-                            </a>
-                            <a href="#">
-                                <FaDribbble />
                             </a>
                         </motion.div>
                     </div>

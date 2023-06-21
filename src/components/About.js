@@ -3,6 +3,7 @@ import CountUp from "react-countup";
 import { useInView } from "react-intersection-observer";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const About = () => {
     const [ref, inView] = useInView({
@@ -84,9 +85,9 @@ const About = () => {
                         </div>
                         <div className="flex gap-x-8 items-center">
                             <button className="btn btn-lg">Contact me</button>
-                            <a href="#" className="text-gradient btn-link">
+                            <Link to="work" className="text-gradient btn-link">
                                 My Portfolio
-                            </a>
+                            </Link>
                         </div>
                     </motion.div>
                 </div>
