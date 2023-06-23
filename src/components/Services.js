@@ -2,6 +2,7 @@ import React from "react";
 import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const services = [
     {
@@ -44,9 +45,16 @@ const Services = () => {
                     >
                         <h2 className="h2 text-accent mb-6">What I Do.</h2>
                         <h3 className="h3 max-w-[455px] mb-16">
-                            I'm a Full Stack Software Engineer.
+                            I'm a Full Stack Software Engineer. <br />
+                            <a
+                                href="https://gitlab.com/smalhadid"
+                                target="_blank"
+                            >
+                                <button className="btn btn-sm">
+                                    See my work
+                                </button>
+                            </a>
                         </h3>
-                        <button className="btn btn-sm">See my work</button>
                     </motion.div>
                     <motion.div
                         variants={fadeIn("left", 0.5)}
