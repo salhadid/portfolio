@@ -1,13 +1,27 @@
-import React from "react";
-import Image from "../assets/photo.png";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin, FaGitlab } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import resume from "../assets/resume.pdf";
 import { Link } from "react-scroll";
+import axios from "axios";
+
+const client = axios.create({
+    baseURL: "https://api.github.com/users/salhadid",
+});
 
 const Banner = () => {
+    const [picture, setPicture] = useState("");
+    const [bio, setBio] = useState("");
+
+    useEffect(() => {
+        client.get().then((res) => {
+            setPicture(res.data);
+            setBio(res.data);
+        });
+    }, []);
+
     return (
         <section
             className="min-h-[85vh] lg:min-h-[78vh] flex items-center"
@@ -59,12 +73,13 @@ const Banner = () => {
                             viewport={{ once: false, amount: 0.7 }}
                             className="mb-8 max-w-lg mx-auto lg:mx-0"
                         >
-                            Curious, dedicated and results-driven Software
+                            {/* Curious, dedicated and results-driven Software
                             Engineer. Continuously engaged in learning new
                             technologies and industry trends. Seeking a
                             collaborative environment to leverage my technical
                             skills, develop innovative software solutions, and
-                            contribute to team success.
+                            contribute to team success. */}
+                            {bio.bio}
                         </motion.p>
                         <motion.div
                             variants={fadeIn("up", 0.6)}
@@ -119,7 +134,7 @@ const Banner = () => {
                         whileInView={"show"}
                         className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]"
                     >
-                        <img src={Image} alt="" />
+                        <img src={picture.avatar_url} alt="" />
                     </motion.div>
                 </div>
             </div>
