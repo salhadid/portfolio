@@ -23,33 +23,43 @@ const Work = () => {
                                 Work.
                             </h2>
                             <p className="max-w-sm mb-16">
-                                Lorem ipsum dolor sit, amet consectetur
-                                adipisicing elit. Dolor natus omnis inventore
-                                quas beatae illo nulla. Officiis magniomnis
-                                molestias.
+                                A snapshot of my most recent projects along with
+                                their links.
                             </p>
-                            <button className="btn btn-sm">
-                                View all projects
-                            </button>
+                            <a
+                                href="https://github.com/salhadid"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button className="btn btn-sm">
+                                    View all projects
+                                </button>
+                            </a>
                         </div>
-                        <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                            <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                            <img
-                                className="group-hover:scale-125 transition-all duration-500"
-                                src={Img1}
-                                alt=""
-                            />
-                            <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                                <span className="text-gradient">
-                                    UI/UX Design
-                                </span>
+                        <a
+                            href="https://trawson.gitlab.io/project-i-think/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                                <img
+                                    className="group-hover:scale-125 transition-all duration-500"
+                                    src={Img1}
+                                    alt=""
+                                />
+                                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                                    <span className="text-gradient">
+                                        Full Stack Engineer
+                                    </span>
+                                </div>
+                                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                                    <span className="text-3xl text-white">
+                                        iThink
+                                    </span>
+                                </div>
                             </div>
-                            <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                                <span className="text-3xl text-white">
-                                    Project Title
-                                </span>
-                            </div>
-                        </div>
+                        </a>
                     </motion.div>
                     <motion.div
                         variants={fadeIn("left", 0.2)}
@@ -58,42 +68,56 @@ const Work = () => {
                         viewport={{ once: false, amount: 0.3 }}
                         className="flex-1 flex flex-col gap-y-10"
                     >
-                        <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                            <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                            <img
-                                className="group-hover:scale-125 transition-all duration-500"
-                                src={Img2}
-                                alt=""
-                            />
-                            <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                                <span className="text-gradient">
-                                    UI/UX Design
-                                </span>
+                        <a
+                            href="https://gitlab.com/smalhadid/carai"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                                <img
+                                    className="group-hover:scale-125 transition-all duration-500"
+                                    src={Img2}
+                                    alt=""
+                                />
+                                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                                    <span className="text-gradient">
+                                        Full Stack Engineer
+                                    </span>
+                                </div>
+                                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                                    <span className="text-3xl text-white">
+                                        Car.ai
+                                    </span>
+                                </div>
                             </div>
-                            <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                                <span className="text-3xl text-white">
-                                    Project Title
-                                </span>
+                        </a>
+                        <a
+                            href="https://github.com/fasttrackd-student-work/spring-assessment-social-media-sprint-8-2023-assessment-1-team-1"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+                                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+
+                                <img
+                                    className="group-hover:scale-125 transition-all duration-500"
+                                    src={Img3}
+                                    alt=""
+                                />
+
+                                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                                    <span className="text-gradient">
+                                        Java Developer
+                                    </span>
+                                </div>
+                                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                                    <span className="text-3xl text-white">
+                                        Twitter Clone
+                                    </span>
+                                </div>
                             </div>
-                        </div>
-                        <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
-                            <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
-                            <img
-                                className="group-hover:scale-125 transition-all duration-500"
-                                src={Img3}
-                                alt=""
-                            />
-                            <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
-                                <span className="text-gradient">
-                                    UI/UX Design
-                                </span>
-                            </div>
-                            <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
-                                <span className="text-3xl text-white">
-                                    Project Title
-                                </span>
-                            </div>
-                        </div>
+                        </a>
                     </motion.div>
                 </div>
             </div>

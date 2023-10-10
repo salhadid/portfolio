@@ -32,9 +32,15 @@ const About = () => {
                             I'm a Full Stack Software Engineer.
                         </h3>
                         <p className="mb-6">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Dolor natus omnis inventore quas beatae illo
-                            nulla. Officiis magniomnis molestias.
+                            From finance to software engineering, I merge
+                            analytical expertise with technical innovation. My
+                            journey through global firms to tech education has
+                            cultivated a unique perspective, anchored by
+                            relentless curiosity and a passion for creative
+                            problem-solving. I offer a unique blend of financial
+                            insight and coding prowess, driven by an enduring
+                            commitment to lifelong learning and an unwavering
+                            work ethic.
                         </p>
                         <div className="flex gap-x-6 lg:gap-x-10 mb-12">
                             <div>
@@ -57,8 +63,8 @@ const About = () => {
                                     {inView ? (
                                         <CountUp
                                             start={0}
-                                            end={3}
-                                            duration={3}
+                                            end={5}
+                                            duration={5}
                                         />
                                     ) : null}
                                 </div>
